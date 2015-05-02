@@ -1,4 +1,4 @@
-#comments-start
+﻿#comments-start
 ; ----------------------------------------------------------------------------
 rundolines.kak.au3
 
@@ -98,18 +98,18 @@ If WinExists($statawin) Then
     WinActivate($statawin)
     WinWaitActive($statawin)
     ; Activate Stata Command Window and select text (if any)
-    Send("^4")
+    Send("^1")
     ; Ctl-A was giving me problems so I used ESC instead
-    Send("{ESC}")
-	  ; Run temporary file
-	  ; Double quotes around $dofile needed in case path contains blanks
-	  ClipPut("include " & '"' & $tempfile & '"')
+    ;Send("{ESC}")
+	; Run temporary file
+	; Double quotes around $dofile needed in case path contains blanks
+	ClipPut("include " & '"' & $tempfile & '"')
     Send("^v{Enter}")
 Else
   Run($statapath)
   WinWaitActive($statawin)
   ; Activate Stata Command Window
-  Send("^4")
+  Send("^1")
   ; Run temporary file
   ; Double quotes around $dofile needed in case path contains blanks
   ClipPut("include " & '"' & $tempfile & '"')

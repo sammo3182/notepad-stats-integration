@@ -1,4 +1,4 @@
-#comments-start
+﻿#comments-start
 ; ----------------------------------------------------------------------------
 send2stata.kak.au3
 
@@ -64,9 +64,9 @@ If WinExists($statawin) Then
     WinActivate($statawin)
     WinWaitActive($statawin)
     ; Activate Stata Command Window and select text (if any)
-    Send("^4")
+    Send("^1")
     ; Ctl-A was giving me problems so I used ESC instead
-    Send("{ESC}")
+    ; Send("{ESC}")
     ; Run saved do-file
     ; Putting it in clipboard and copying is faster than sending key strokes
     ClipPut($command)
