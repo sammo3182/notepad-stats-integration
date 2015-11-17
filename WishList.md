@@ -1,0 +1,5 @@
+## Room for growth ##
+
+1. I recently received an email from Jelmer Ypma, who [has posted an AutoIt script](http://www.ucl.ac.uk/~uctpjyy/downloads.html) that can be used to run the file currently open in Notepad++ in a program of choice (based on the file extension). You can quickly see how the .ini file works; it appears you could extend the idea to nearly any file extension.   I think my code should be re-written along these lines.
+
+2. Dream: For a while, I have had the idea to write a plug-in to extend the capability of Stata and Notepad++. What I would like to do is write a plugin for Notepad++ to be able to create "Cells" of data which can be sent to Stata with one keyboard shortcut.  This already exists in Matlab's built-in editor.  In theory, this wouldn't be Stata-specific; it could be used for Matlab, SAS, and other programs. [Click here](http://sourceforge.net/forum/message.php?msg_id=6088865) for a better description of the idea. I haven't started trying, mainly because I don't have experience writing Notepad++ plug-ins. If you are interested in teaming up on this, please contact me.
